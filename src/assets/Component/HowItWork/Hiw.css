@@ -1,0 +1,111 @@
+*{
+  font-family: "Figtree", "sans-serif";
+}
+.how-it-works {
+    padding: 0 50px;
+    background-color: #f8f8ff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .how-it-works .title h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .how-it-works .title p {
+    font-size: 16px;
+    color: rgb(94, 91, 91);
+    margin-top: 8px;
+  }
+  
+  /* Main Flexbox Layout */
+  .how-it-works-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+    padding: 30px;
+  }
+  
+  /* Light Gray Background */
+  .gray-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: #e8e8e857;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  /* Left Content */
+  .how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    z-index: 2;
+    margin-left: 20px; /* Shift slightly from left */
+  }
+  
+  /* Each Step Card */
+  .card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+  }
+  
+  /* Icon Background */
+  .icon-container {
+    background: #f3f4f6;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  .card .icon {
+    font-size: 24px;
+    color: black;
+  }
+  
+  /* Right Side - Car Image */
+  .how-it-works-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .how-it-works-image img {
+    width: 450px;
+    max-width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .how-it-works-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .gray-background {
+      width: 100%;
+    }
+  
+    .how-it-works-content {
+      width: 100%;
+    }
+  
+    .how-it-works-image {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  

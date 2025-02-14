@@ -1,0 +1,47 @@
+/* Footer Main Container */
+.footer {
+    background: linear-gradient(to bottom, #3a3a3a, black);
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Tagline Styling */
+.footer-tagline {
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 80%;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+/* Car Image Styling */
+
+.footer-car img {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-line {
+    width: 90%;
+    margin: 15px auto;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    opacity: 0.8;
+}
