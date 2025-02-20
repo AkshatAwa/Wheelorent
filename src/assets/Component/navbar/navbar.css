@@ -41,14 +41,9 @@
     gap: 20px;
 }
 
-.sign-in {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-}
 
-.sign-up {
+
+.Log-in {
     background-color: #007bff;
     color: white;
     padding: 8px 15px;

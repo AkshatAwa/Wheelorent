@@ -20,8 +20,7 @@ const Navbar = () => {
 
       {/* Right Side (Sign In & Sign Up) */}
       <div className="auth-buttons">
-        <a href="#" className="sign-in">Sign in</a>
-        <a href="#" className="sign-up">Sign up</a>
+        <a href="#" className="Log-in">Log In </a>
       </div>
     </nav>
   );
