@@ -52,6 +52,15 @@
     font-weight: 500;
 }
 
+.Log-out{
+     background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
