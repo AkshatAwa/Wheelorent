@@ -4,8 +4,8 @@ import "./navbar.css";
 import logo from "./wor.png"; // Import logo image
 
 const Navbar = () => {
-  const { loginWithRedirect,isAuthenticated,logout } = useAuth0();
- 
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+
   return (
     <nav className="navbar">
       {/* Logo */}
@@ -30,21 +30,21 @@ const Navbar = () => {
       </ul>
 
       {/* LogIn & LogOut Buttons */}
-      <div className="auth-buttons">        
-        {
-          isAuthenticated ?(
+      <div className="auth-buttons">
+        <p>{user?.name}</p>
+        {isAuthenticated ? (
           <button
-        className = "Log-out"
-          onClick={() =>
-            logout({ logoutParams: { returnTo: window.location.origin } })
-          }
-        >
-          Log Out
-        </button>
-          ):(
-        <button className="Log-in" onClick={() => loginWithRedirect()}>
-          Log In
-        </button>
+            className="Log-out"
+            onClick={() =>
+              logout({ logoutParams: { returnTo: window.location.origin } })
+            }
+          >
+            Log Out
+          </button>
+        ) : (
+          <button className="Log-in" onClick={() => loginWithRedirect()}>
+            Log In
+          </button>
         )}
       </div>
     </nav>
