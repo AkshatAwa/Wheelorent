@@ -1,9 +1,10 @@
 import React from "react";
 import "./Hero.css";
+import image from "./image.png"; // Importing the image
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div className="hero-container" style={{ backgroundImage: `url(${image})` }}>
       <div className="overlay">
         <h1 className="title">WHEEL Ⓞ RENT</h1>
         <div className="form-container">
