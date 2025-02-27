@@ -21,14 +21,14 @@
   
   .overlay {
     background: rgba(255, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 2.5rem;
+    border-radius: 12px;
     text-align: center;
-    width: 500px; /* Increased width */
+    width: 600px; /* Increased width */
   }
   
   .title img {
-    width: 320px; /* Reduced logo size */
+    width: 120px; /* Reduced logo size */
     height: auto;
     margin-bottom: 10px;
   }
@@ -36,27 +36,27 @@
   .form-container {
     display: flex;
     flex-direction: column;
+    gap: 20px; /* Increased gap between all fields */
   }
   
   label {
     color: white;
     text-align: left;
-    margin-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
   }
   
   input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-top: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
   }
   
   .date-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px; /* Added more spacing */
+    margin-top: 30px; /* More space between Pickup & Drop-off */
   }
   
   .date-container div {
@@ -66,10 +66,10 @@
   .find-btn {
     background: black;
     color: white;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    border-radius: 6px;
+    margin-top: 30px; /* More space before button */
     cursor: pointer;
     font-size: 16px;
   }
