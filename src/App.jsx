@@ -6,12 +6,14 @@ import FAQ from './assets/Component/FAQ/Faq'
 import Footer from './assets/Component/Footer/Footer'
 import Navbar from './assets/Component/navbar/Navbar'
 import RentalDeals from './assets/Component/RentDeals/RentDeals'
+import Hero from './assets/Component/Hero/Hero'
 
 function App() {
 
   return (
     <>
-    <Navbar/>
+     <Navbar/>
+     <Hero/>
      <HowItWorks/>
      <RentalDeals/>
      <WhyChooseUs/>
