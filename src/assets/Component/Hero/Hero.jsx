@@ -1,14 +1,15 @@
 import React from "react";
 import "./Hero.css";
-import image from "./image.png"; // Importing the image
-import logo from "./wor.png"
-
+import image from "./image.png";
+import logo from "./wor.png";
 
 const Hero = () => {
   return (
-    <div className="hero-container" style={{ backgroundImage: `url(${image})` }}>
+    <div className="hero-container">
       <div className="overlay">
-        <h1 className="title"><img src={logo} alt="Image not Loaded" /></h1>
+        <h1 className="title">
+          <img src={logo} alt="Image not Loaded" />
+        </h1>
         <div className="form-container">
           <label>Pickup Location</label>
           <input type="text" placeholder="Search a location" />
