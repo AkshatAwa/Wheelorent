@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleRenterClick = () => {
-    navigate('/PublishyourVehicle');
+    navigate('/publishform');
   };
 
   return (

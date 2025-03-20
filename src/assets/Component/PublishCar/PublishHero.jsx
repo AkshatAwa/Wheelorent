@@ -1,21 +1,31 @@
 import React from 'react';
-import './Mainhero.css'; // For custom font if needed
-import carBg from '../PublishCar/publish.jpg'; // You can use the image you uploaded
+import { useNavigate } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
+import './PublishHero.css';
+import carBg from '../PublishCar/publish.jpg';
 
 const Mainhero = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth0();
+
+  const handlePublishClick = () => {
+    if (user && user.sub) {
+      const userId = user.sub.replace('|', '_'); // clean ID for URL
+      navigate(`/publishform/${userId}`);
+    } else {
+      alert("Please log in first.");
+    }
+  };
+
   return (
     <div
-      className="w-full h-screen bg-cover bg-center flex flex-col items-center justify-center text-white px-4"
-      style={{
-        backgroundImage: `url(${carBg})`,
-      }}
+      className="main-hero-container"
+      style={{ backgroundImage: `url(${carBg})` }}
     >
-      <h1 className="text-3xl md:text-5xl font-semibold text-center font-['cursive'] drop-shadow-lg">
-        Welcome to <span className="text-[#ffffff]">Wheel-o-Rent</span>—where your<br />
-        car earns for you, safely and effortlessly!
+      <h1 className="hero-heading">
+        Welcome to Wheel-o-Rent—where your car earns for you, safely and effortlessly!
       </h1>
-
-      <button className="mt-8 bg-white text-black text-lg font-semibold py-3 px-8 rounded-full hover:scale-105 transition-all duration-300 shadow-xl">
+      <button className="hero-button" onClick={handlePublishClick}>
         Publish your Vehicle
       </button>
     </div>
