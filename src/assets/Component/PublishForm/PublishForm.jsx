@@ -1,10 +1,11 @@
 import React from 'react'
+import PublishVehicleForm from './Billing/Billing'
 
 const PublishForm = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <PublishVehicleForm/>
+    </>
   )
 }
 
