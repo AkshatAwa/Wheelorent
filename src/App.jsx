@@ -1,22 +1,23 @@
 import react from 'react'
 import './App.css'
-import HowItWorks from './assets/Component/HowItWork/Hiw'
-import WhyChooseUs from './assets/Component/WhyChooseUs/Wcu'
-import FAQ from './assets/Component/FAQ/Faq'
-import Footer from './assets/Component/Footer/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './assets/Component/navbar/Navbar'
-import RentalDeals from './assets/Component/RentDeals/RentDeals'
+import Mainhero from './assets/Component/MainHero/Mainhero'
+import PublishCar from './assets/Component/PublishCar/PublishCar'
+import PublishForm from './assets/Component/PublishForm/PublishForm'
 
 function App() {
 
   return (
     <>
-    <Navbar/>
-     <HowItWorks/>
-     <RentalDeals/>
-     <WhyChooseUs/>
-     <FAQ/>
-     <Footer/>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Mainhero />} />
+        <Route path="/publishform" element={<PublishCar />} />
+        <Route path="/publishform/:userId" element={<PublishForm/>} />
+      </Routes>
+    </Router>
     </>
   )
 }

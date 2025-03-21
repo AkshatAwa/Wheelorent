@@ -2,9 +2,15 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./navbar.css";
 import logo from "./wor.png"; // Import logo image
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+  const navigate = useNavigate();
+
+  const handleRenterClick = () => {
+    navigate('/publishform');
+  };
 
   return (
     <nav className="navbar">
@@ -15,8 +21,8 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul className="nav-links">
-        <li>
-          <a href="#">Become a renter</a>
+        <li onClick={handleRenterClick} style={{ cursor: "pointer" }}>
+          Become a renter
         </li>
         <li>
           <a href="#">Rental deals</a>
