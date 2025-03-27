@@ -36,7 +36,7 @@
   .form-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Increased gap between all fields */
+    gap: 15px; /* Increased gap between all fields */
   }
   
   label {
@@ -47,7 +47,7 @@
   
   input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin-top: 5px;
     border: none;
     border-radius: 6px;
@@ -56,6 +56,7 @@
   .date-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     margin-top: 30px; /* More space between Pickup & Drop-off */
   }
   
@@ -66,7 +67,7 @@
   .find-btn {
     background: black;
     color: white;
-    padding: 14px;
+    padding: 14px 18px;
     border: none;
     border-radius: 6px;
     margin-top: 30px; /* More space before button */
