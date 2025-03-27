@@ -12,7 +12,6 @@ const Mainhero = () => {
     <Hero/>
     <HowItWorks/>
     <RentalDeals/>
-    <RentalDeals/>
     <WhyChooseUs/>
     <FAQ/>
     <Footer/>
